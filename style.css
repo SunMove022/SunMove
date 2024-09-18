@@ -1,0 +1,150 @@
+/* 使用指定的字体 */
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url('fonts/MyCustomFont.woff2') format('woff2'),
+         url('fonts/MyCustomFont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: #1b1b1b;
+    color: #fff;
+    font-family: 'MyCustomFont', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: auto;
+}
+
+.container {
+    text-align: center;
+    border: 5px solid #fff;
+    padding: 20px;
+    background-color: #333;
+    background-image: linear-gradient(135deg, #444, #222);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.8);
+    width: 800px;
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 28px;
+    color: #ffcc00;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px #000;
+}
+
+.intro {
+    font-size: 14px;
+    color: #ffcc00;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.media-section {
+    margin-bottom: 40px;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    position: relative;
+}
+
+h2 {
+    font-size: 18px;
+    color: #00ff99;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 3px #000;
+}
+
+/* 媒体内容尺寸统一，固定宽高 */
+.media-content, .slideshow-container {
+    width: 600px; /* 固定宽度 */
+    height: 338px; /* 固定高度（比例16:9） */
+    border: 8px solid #fff;
+    border-radius: 10px;
+    background-color: #000;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.7);
+}
+
+/* 相册图片样式 */
+.slideshow-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
+    transition: opacity 1s ease; /* 添加淡入淡出动画 */
+}
+
+.active {
+    display: block;
+    opacity: 1;
+}
+
+/* 幻灯片控制按钮样式 */
+.controls {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.prev, .next {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 2px solid #fff;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    color: #333;
+    transition: background-color 0.3s ease;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+/* 小圆点指示器 */
+.dot-container {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.active-dot, .dot:hover {
+    background-color: #717171;
+}
+
+/* 按钮样式 */
+.buttons {
+    margin-top: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #ff5733;
+    border: 3px solid #fff;
+    text-decoration: none;
+    font-size: 12px;
+    box-shadow: 5px 5px 0px #000;
+    margin: 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.btn:ho

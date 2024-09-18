@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retro Pixel Media Player & Slideshow</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the Retro Pixel Media Center</h1>
+        <p class="intro">
+            Relive the nostalgia of the 80s with our pixel-style video player and photo slideshow.
+            A perfect blend of retro aesthetics and modern functionality.
+        </p>
+
+        <!-- 视频播放器和相册容器 -->
+        <div class="media-section">
+            <!-- 视频播放器 -->
+            <div id="video-player" class="video-section">
+                <h2>Pixel Video Player</h2>
+                <video controls class="media-content">
+                    <source src="your-video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <!-- 相册轮播 -->
+            <div id="slideshow-player" class="slideshow-section" style="display: none;">
+                <h2>Retro Photo Slideshow</h2>
+                <div class="slideshow-container">
+                    <img src="photo1.jpg" class="slideshow-image active">
+                    <img src="photo2.jpg" class="slideshow-image">
+                    <img src="photo3.jpg" class="slideshow-image">
+                    <img src="photo4.jpg" class="slideshow-image">
+                    <div class="controls">
+                        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+                        <button class="next" onclick="changeSlide(1)">&#10095;</button>
+                    </div>
+                    <!-- 小圆点指示器 -->
+                    <div class="dot-container">
+                        <span class="dot" onclick="currentSlide(0)"></span>
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="buttons">
+            <a href="#" class="btn" id="toggle-media">Watch More Videos</a>
+            <a href="#" class="btn">About Us</a>
+        </div>
+
+        <footer>
+            <p>© 2024 Pixel Media Co. | Crafted with love for retro enthusiasts.</p>
+        </footer>
+
+        <script src="script.js"></script>
+    </div>
+</body>
+</html>
