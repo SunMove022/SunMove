@@ -1,8 +1,8 @@
 /* 使用指定的字体 */
 @font-face {
     font-family: 'MyCustomFont';
-    src: url('font\MyCustomFont.woff2') format('woff2'),
-         url('font\MyCustomFont.ttf') format('truetype');
+    src: url('font/MyCustomFont.woff2') format('woff2'),
+         url('font/MyCustomFont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
