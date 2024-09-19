@@ -1,8 +1,8 @@
 /* 使用指定的字体 */
 @font-face {
     font-family: 'MyCustomFont';
-    src: url('font/MyCustomFont.woff2') format('woff2'),
-         url('font/MyCustomFont.ttf') format('truetype');
+    src: url('fonts/MyCustomFont.woff2') format('woff2'),
+         url('fonts/MyCustomFont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -147,4 +147,37 @@ h2 {
     transition: all 0.3s ease;
 }
 
-.btn:ho
+.about-us-section {
+    text-align: center;
+    margin-top: 15px;
+    padding: 15px;
+    background-color: #444;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.8);
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.timeline-event {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    object-fit: cover;
+}
+
+
+.btn:hover{
+    background-color: #ff9966;
+}
