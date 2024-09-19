@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head> <!-- 头部-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Retro Pixel Media Player & Slideshow</title>
+    <title>A Gift for You</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -29,32 +29,37 @@
             <div id="slideshow-player" class="slideshow-section" style="display: none;">
                 <h2>Retro Photo Slideshow</h2>
                 <div class="slideshow-container">
-                    <img src="photo1.jpg" class="slideshow-image active">
-                    <img src="photo2.jpg" class="slideshow-image">
-                    <img src="photo3.jpg" class="slideshow-image">
-                    <img src="photo4.jpg" class="slideshow-image">
+                    <!-- 这里通过JavaScript动态生成相册图片和小圆点 -->
                     <div class="controls">
                         <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
                         <button class="next" onclick="changeSlide(1)">&#10095;</button>
                     </div>
-                    <!-- 小圆点指示器 -->
-                    <div class="dot-container">
-                        <span class="dot" onclick="currentSlide(0)"></span>
-                        <span class="dot" onclick="currentSlide(1)"></span>
-                        <span class="dot" onclick="currentSlide(2)"></span>
-                        <span class="dot" onclick="currentSlide(3)"></span>
-                    </div>
+                    <div class="dot-container"></div> <!-- 小圆点容器 -->
                 </div>
             </div>
         </div>
 
         <div class="buttons">
-            <a href="#" class="btn" id="toggle-media">Watch More Videos</a>
-            <a href="#" class="btn">About Us</a>
+            <a href="#" class="btn" id="toggle-media">Watch More Photos</a>
+            <a href="#" class="btn" id="about-us-btn">About Us</a>
         </div>
 
+        <div id="about-us" class="about-us-section" style="display: none;">
+            <h2>Our Journey</h2>
+            <div class="timeline">
+                <div class="timeline-event">
+                    <img src="person1.jpg" alt="Person 1" class="avatar">
+                    <p>2005 - First met in college.</p>
+                </div>
+                <div class="timeline-event">
+                    <img src="person2.jpg" alt="Person 2" class="avatar">
+                    <p>2010 - Reconnected during a concert.</p>
+                </div>
+                <!-- Add more timeline events as needed -->
+            </div>
+        </div>
         <footer>
-            <p>© 2024 Pixel Media Co. | Crafted with love for retro enthusiasts.</p>
+            <p>© 2024 Pixel Media Co. | Crafted with love for u.</p>
         </footer>
 
         <script src="script.js"></script>
